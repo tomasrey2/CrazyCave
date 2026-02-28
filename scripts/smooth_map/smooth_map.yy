@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"smooth_map",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"smooth_map",
+  "parent":{
+    "name":"mapGenerator",
+    "path":"folders/mapGenerator.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

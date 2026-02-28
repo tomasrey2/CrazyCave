@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"get_regions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"get_regions",
+  "parent":{
+    "name":"mapGenerator",
+    "path":"folders/mapGenerator.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"count_neighbors",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"count_neighbors",
+  "parent":{
+    "name":"mapGenerator",
+    "path":"folders/mapGenerator.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
