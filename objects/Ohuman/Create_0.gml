@@ -19,10 +19,10 @@ if (ui != noone) {
             velocityjump = 1.5;
             break;
         case 1: // Normal (+45%)
-            velocityjump = 1.5 * 3;
+            velocityjump = 1.5 * 1.75;
             break;
         case 2: // Difícil (+55%)
-            velocityjump = 1.5 * 1.55;
+            velocityjump = 1.5 * 2.5;
             break;
         default:
             velocityjump = 1.5;

@@ -74,7 +74,7 @@ if (place_meeting(x, y + 1, Ograss) || place_meeting(x, y + 1, Orocks)) {
 // ===== TRAMPOLINE =====
 if (place_meeting(x, y, Otrampoline)) {
     xvelocity = 0.5;
-    yvelocity = -2.2;
+    yvelocity = -4;
 }
 
 // Poner trampoline si presiona abajo en el suelo
