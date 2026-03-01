@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite11",
-    "path":"sprites/Sprite11/Sprite11.yy",
+    "name":"nuevo_fondo",
+    "path":"sprites/nuevo_fondo/nuevo_fondo.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,3 +1,6 @@
+contador = 0
+
+
 // Obtener referencia a UI
 var ui = instance_find(UI, 0);
 
@@ -87,10 +90,16 @@ if (place_meeting(x, y, Oportal)) {
     var next_room = room_next(room);
     if (next_room != -1) {
         room_goto(next_room);
-    } else {
-        show_message("¡Fin del juego!");
-    }
+		contador += 1
+    } 
 }
+
+if (contador == 5 && place_meeting(x,y,Oportal))
+{
+	contador +=1
+	show_message("Creditos: Emilio Sanchez, Juan Pablo , Tomas Rey")
+}
+
 
 // ===== DAÑO POR AGUA (NIVEL DE AGUA RISING) =====
 var in_water = place_meeting(x, y, Owater);
