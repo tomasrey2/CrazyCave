@@ -9,7 +9,6 @@ max_hp = 100;
 // Puntos
 points = 0;
 water_damage_timer = 0;
-credits_popup_shown = false;
 
 // Fuerza de salto según dificultad
 var ui = instance_find(UI, 0);

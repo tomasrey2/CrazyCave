@@ -44,33 +44,34 @@ function spawn_game_objects()
         }
     }
     
-    // Spawear bandera en posición aleatoria (mínimo 30 bloques del jugador)
+    // Spawear portal tomando posiciones válidas de Ofloor
+    with (Oportal) instance_destroy();
+    
     var floor_count = instance_number(Ofloor);
+    var portal_spawned = false;
+    
     if (floor_count > 0)
     {
         var attempts = 0;
-        var spawned = false;
-        
-        while (!spawned && attempts < 100)
+        while (!portal_spawned && attempts < 150)
         {
             var random_floor = instance_find(Ofloor, irandom(floor_count - 1));
-            
-            // Verificar que esté a mínimo 30 bloques del jugador
             var distance = point_distance(random_floor.x, random_floor.y, player_x, player_y);
             
-            if (distance >= 300) // 30 bloques * 10 pixeles
+            // Lejos del jugador y dentro de límites
+            if (distance >= 300 && random_floor.x >= 0 && random_floor.x < room_width && random_floor.y >= 0 && random_floor.y < room_height)
             {
                 instance_create_depth(random_floor.x, random_floor.y, -100, Oportal);
-                spawned = true;
+                portal_spawned = true;
             }
             attempts++;
         }
         
-        // Si no se pudo spawear lejos, spawear en cualquier Ofloor
-        if (!spawned && floor_count > 0)
+        // Fallback garantizado: cualquier Ofloor válido dentro del mapa
+        if (!portal_spawned)
         {
-            var random_floor = instance_find(Ofloor, irandom(floor_count - 1));
-            instance_create_depth(random_floor.x, random_floor.y, -100, Oportal);
+            var fallback_floor = instance_find(Ofloor, irandom(floor_count - 1));
+            instance_create_depth(fallback_floor.x, fallback_floor.y, -100, Oportal);
         }
     }
 }

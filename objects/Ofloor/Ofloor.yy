@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"negro",
-    "path":"sprites/negro/negro.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

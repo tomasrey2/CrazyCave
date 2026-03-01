@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"trampoline",
-    "path":"sprites/trampoline/trampoline.yy",
+    "name":"T_sprite",
+    "path":"sprites/T_sprite/T_sprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,

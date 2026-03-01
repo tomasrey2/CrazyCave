@@ -25,3 +25,8 @@ difficulty_names = ["FACIL", "NORMAL", "DIFICIL"];
 game_won = false;
 current_level = 1;
 max_levels = 5;
+
+// Créditos finales
+credits_timer = 0;
+credits_min_frames = room_speed * 4; // 4 segundos mínimos en pantalla
+credits_auto_return_frames = room_speed * 8; // volver al menú automáticamente en 8 segundos

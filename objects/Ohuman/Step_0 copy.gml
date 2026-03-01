@@ -78,24 +78,19 @@ if (place_meeting(x, y, Otrampoline)) {
 if (place_meeting(x, y + 1, Ograss)) {
     if (keyboard_check(vk_down)) {
         instance_destroy(Otrampoline);
-        instance_create_layer(x, y, "Instances", Otrampoline);
+        instance_create_depth(x, y, -100, Otrampoline);
     }
 }
 
 // ===== PORTAL =====
-// La progresión de niveles la maneja Oportal/Step_0.gml
-// Aquí solo mostramos créditos con show_message al tocar portal final
-if (ui != noone) {
-    if (!ui.game_won) {
-        credits_popup_shown = false;
-    }
-
-    if (ui.game_won && place_meeting(x, y, Oportal) && !credits_popup_shown) {
-        credits_popup_shown = true;
-        show_message("Creditos: Emilio Sanchez, Juan Pablo Cuellar, Tomas Rey");
+if (place_meeting(x, y, Oportal)) {
+    var next_room = room_next(room);
+    if (next_room != -1) {
+        room_goto(next_room);
+    } else {
+        show_message("¡Fin del juego!");
     }
 }
-
 
 // ===== DAÑO POR AGUA (NIVEL DE AGUA RISING) =====
 var in_water = place_meeting(x, y, Owater);

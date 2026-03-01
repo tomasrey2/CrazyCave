@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"water",
-    "path":"sprites/water/water.yy",
+    "name":"newwater",
+    "path":"sprites/newwater/newwater.yy",
   },
   "spriteMaskId":null,
   "visible":true,

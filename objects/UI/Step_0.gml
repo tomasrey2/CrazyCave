@@ -144,21 +144,42 @@ if (ui_state == UIState.SETTINGS)
 // ================= INGAME =================
 if (ui_state == UIState.INGAME)
 {
-    // Detectar victoria y reiniciar con ENTER
-    if (game_won && keyboard_check_pressed(vk_enter))
+    if (game_won)
     {
-        // Reiniciar el juego
-        game_won = false;
-        current_level = 1;
-        
-        // Reiniciar HP y puntos del jugador
-        if (instance_exists(Ohuman))
+        // Mantener créditos en pantalla por un tiempo mínimo
+        credits_timer += 1;
+
+        // Permitir ENTER solo después del tiempo mínimo
+        if (credits_timer >= credits_min_frames && keyboard_check_pressed(vk_enter))
         {
-            Ohuman.hp = 100;
-            Ohuman.points = 0;
+            game_won = false;
+            current_level = 1;
+            credits_timer = 0;
+            
+            // Reiniciar HP y puntos del jugador
+            if (instance_exists(Ohuman))
+            {
+                Ohuman.hp = 100;
+                Ohuman.points = 0;
+            }
+            
+            // Reiniciar room
+            room_restart();
         }
-        
-        // Reiniciar la sala
-        room_restart();
+
+        // Volver automáticamente al menú principal al terminar créditos
+        if (credits_timer >= credits_auto_return_frames)
+        {
+            game_won = false;
+            current_level = 1;
+            credits_timer = 0;
+            ui_state = UIState.MAIN_MENU;
+            hp = 100;
+max_hp = 100;
+        }
+    }
+    else
+    {
+        credits_timer = 0;
     }
 }
