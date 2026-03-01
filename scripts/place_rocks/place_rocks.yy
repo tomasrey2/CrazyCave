@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"place_rocks",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"place_rocks",
+  "parent":{
+    "name":"mapGenerator",
+    "path":"folders/mapGenerator.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,9 @@
+{
+  "$GMFolder":"",
+  "%Name":"Objeto",
+  "folderPath":"folders/Objeto.yy",
+  "name":"Objeto",
+  "order":1,
+  "resourceType":"GMFolder",
+  "resourceVersion":"2.0",
+}

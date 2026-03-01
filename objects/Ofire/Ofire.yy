@@ -6,8 +6,8 @@
   "name":"Ofire",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"Objeto",
+    "path":"folders/Objeto.yy",
   },
   "parentObjectId":null,
   "persistent":false,

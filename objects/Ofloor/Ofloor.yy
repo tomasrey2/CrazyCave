@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Jugador",
+  "%Name":"Ofloor",
   "eventList":[],
   "managed":true,
-  "name":"Jugador",
+  "name":"Ofloor",
   "overriddenProperties":[],
   "parent":{
     "name":"Objeto",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite2",
-    "path":"sprites/Sprite2/Sprite2.yy",
+    "name":"Sprite12",
+    "path":"sprites/Sprite12/Sprite12.yy",
   },
   "spriteMaskId":null,
   "visible":true,

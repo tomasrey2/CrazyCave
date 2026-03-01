@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"draw_buttonUI",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_buttonUI",
+  "parent":{
+    "name":"UI",
+    "path":"folders/UI.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

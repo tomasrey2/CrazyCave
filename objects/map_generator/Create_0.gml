@@ -4,10 +4,10 @@
 map_width = 89;
 map_height = 50;
 
-fill_percent = 0.5;
+fill_percent = 0.45;
 iterations = 5;
 
-cell_size = 12;
+cell_size = 10;
 
 // Crear grid lógico
 grid = ds_grid_create(map_width, map_height);
@@ -36,6 +36,9 @@ var regions = get_regions(grid);
 if (array_length(regions) > 1) {
     connect_regions(grid, regions);
 }
+
+// Colocar rocas aleatorias en el suelo
+place_rocks(grid, 0.02);
 
 // Generar tiles visuales
 generate_tiles(grid);

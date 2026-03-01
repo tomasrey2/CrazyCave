@@ -1,0 +1,9 @@
+{
+  "$GMFolder":"",
+  "%Name":"mapGenerator",
+  "folderPath":"folders/mapGenerator.yy",
+  "name":"mapGenerator",
+  "order":3,
+  "resourceType":"GMFolder",
+  "resourceVersion":"2.0",
+}

@@ -6,8 +6,8 @@
   "name":"Ograss",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"Objeto",
+    "path":"folders/Objeto.yy",
   },
   "parentObjectId":{
     "name":"Orocks",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"grass",
-    "path":"sprites/grass/grass.yy",
+    "name":"Sprite11",
+    "path":"sprites/Sprite11/Sprite11.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -23,7 +23,7 @@ if (instance_place(x, y, Ofire))
 
 
 // Saltar solo si está en el suelo
-if (place_meeting(x, y + 1, Ograss)) {
+if (place_meeting(x, y + 1, Ograss) || place_meeting(x, y + 1, Orocks)) {
     if (keyboard_check_pressed(vk_up)) {
         yvelocity = -velocityjump;
 		 
@@ -60,7 +60,7 @@ else if (keyboard_check(vk_left)) {
     xvelocity = -velocitywalk;
 }
 
-move_and_collide(xvelocity, yvelocity, Ograss)
+move_and_collide(xvelocity, yvelocity, Ograss, Orocks)
 
 // Movimiento y colisión
-move_and_collide(xvelocity, yvelocity, Ograss);
+move_and_collide(xvelocity, yvelocity, Ograss, Orocks);
