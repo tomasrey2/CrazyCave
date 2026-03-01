@@ -1,5 +1,7 @@
 /// CREATE EVENT
 
+
+
 // Configuración
 map_width = 89;
 map_height = 50;

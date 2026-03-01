@@ -1,7 +1,7 @@
 xvelocity = 0;
 yvelocity = 0;
 velocitywalk = 1;
-
+audio_play_sound(Sound3, 1, true);
 // Salud
 hp = 100;
 max_hp = 100;

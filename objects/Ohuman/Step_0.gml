@@ -1,3 +1,5 @@
+
+
 // Obtener referencia a UI
 var ui = instance_find(UI, 0);
 
