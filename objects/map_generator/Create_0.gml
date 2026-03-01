@@ -42,3 +42,6 @@ place_rocks(grid, 0.02);
 
 // Generar tiles visuales
 generate_tiles(grid);
+
+// Spawear objetos del juego (minerales, bandera, agua)
+spawn_game_objects();

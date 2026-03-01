@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"regenerate_map",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"regenerate_map",
+  "parent":{
+    "name":"mapGenerator",
+    "path":"folders/mapGenerator.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

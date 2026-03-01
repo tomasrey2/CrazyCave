@@ -15,3 +15,13 @@ fill_percent = 0.45;
 selected_map_seed = irandom(99999);
 
 button_hover = -1;
+
+// Dificultad
+difficulty_selected = 1; // 0 = Fácil, 1 = Normal, 2 = Difícil
+difficulty_levels = [0.65, 0.5, 0.45];
+difficulty_names = ["FACIL", "NORMAL", "DIFICIL"];
+
+// Sistema de niveles
+game_won = false;
+current_level = 1;
+max_levels = 5;
