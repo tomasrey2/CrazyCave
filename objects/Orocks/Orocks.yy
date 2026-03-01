@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"rocks",
-    "path":"sprites/rocks/rocks.yy",
+    "name":"pidrarebote",
+    "path":"sprites/pidrarebote/pidrarebote.yy",
   },
   "spriteMaskId":null,
   "visible":true,
